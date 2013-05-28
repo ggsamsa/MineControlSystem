@@ -1,0 +1,10 @@
+project MineControlSystem is
+
+   for Source_Dirs use (".\**");
+   for Main use ("main.adb");
+
+   package Pretty_Printer is
+   end Pretty_Printer;
+
+end MineControlSystem;
+

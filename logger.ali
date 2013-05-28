@@ -1,0 +1,153 @@
+V "GNAT Lib v2012"
+A -gnatA
+P SS ZX
+R nnnnnnnvnvnnnnnnnnvnnvnvvvvnnvnnnnvnnvnnnvnnvnnnnnnnnnnnnnvnnvnvnnnvnnvnnnnnnnnnnnnnn
+
+U logger%b		logger.adb		d0c5c625 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.fixed_io%s
+Z ada.text_io.float_aux%s  a-tiflau.adb		a-tiflau.ali
+Z ada.text_io.generic_aux%s  a-tigeau.adb	a-tigeau.ali
+W ada.text_io.unbounded_io%s  a-tiunio.ads	a-tiunio.ali
+W calendar%s		calendar.ads		calendar.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.arith_64%s	s-arit64.adb		s-arit64.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_5%s	s-conca5.adb		s-conca5.ali
+W system.exn_lli%s	s-exnlli.adb		s-exnlli.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+U logger%s		logger.ads		8ced6d09 EE NE OO PK IL
+
+D ada.ads		20120510125802 3ffc8e18
+D a-calend.ads		20120510125748 d86d6c8c
+D a-calfor.ads		20120510125748 0a6f9afc
+D a-catizo.ads		20120510125748 409d7e5b
+D a-charac.ads		20120510125748 2d3ec45b
+D a-chlat1.ads		20120510125748 2825df20
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-string.ads		20120510125756 90ac6797
+D a-strmap.ads		20120510125756 9cb836fb
+D a-strunb.ads		20120510125756 3f91d4c5
+D a-suteio.ads		20120510125758 26d8e9aa
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tifiio.ads		20120510125800 6ed4936c
+D a-tifiio.adb		20120510125800 60891011
+D a-tiflau.ads		20120510125800 c0393f21
+D a-tigeau.ads		20120510125800 9eaed207
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-tiunio.ads		20120510125800 759c6b0c
+D a-unccon.ads		20120510125800 f9eb8f06
+D calendar.ads		20120510125804 2cb525cd
+D interfac.ads		20120510125814 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D logger.ads		20130528212444 8ced6d09
+D logger.adb		20130528234648 d26cf269
+D system.ads		20120510125846 6daf90c4
+D s-arit64.ads		20120510125818 a011a169
+D s-atocou.ads		20120510125818 4a9c6cb4
+D s-atocou.adb		20120510125818 c864ec10
+D s-conca2.ads		20120510125822 fbd0f2fc
+D s-conca5.ads		20120510125822 1039cea1
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-exnlli.ads		20120510125824 81977baf
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-imgint.ads		20120510125826 02dbe0c2
+D s-imgrea.ads		20120510125826 c7a851e2
+D s-maccod.ads		20120510125826 0fbb7bce
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-secsta.ads		20120510125832 eea35a36
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-stposu.ads		20120510125834 197be7e5
+D s-stratt.ads		20120510125834 aedef97e
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 29|1r6 2r6 3r6 4r5 5r5 6r6 6r31 12r26 46r11
+X 2 a-calend.ads
+36K13*Calendar 375e17 29|8r6
+38I9*Time 29|17r21
+50O12*Day_Duration{duration} 29|12r47 16r15 20r43
+52V13*Clock{38I9} 29|50s24
+63U14*Split 29|51s7
+X 3 a-calfor.ads
+24K22*Formatting 215e28 29|8w15 8r40
+X 9 a-inteio.ads
+18K13*Integer_Text_IO[22|45] 29|6w10 6r35
+X 12 a-string.ads
+16K13*Strings 35e16 29|1r10 5r9
+X 14 a-strunb.ads
+76K21*Unbounded 489e26 29|1w18 5r17
+79R9*Unbounded_String 473e14 29|24r31 47r14
+94V13*To_Unbounded_String{79R9} 29|47s34
+X 17 a-textio.ads
+49K13*Text_IO 471e16 29|2r10 3w10 4r9 12r30 46r15
+52P9*File_Type(369R9) 29|46r23
+53n42*Append_File{53E9} 29|56r32
+92U14*Open 29|56s7
+93p7 File{52P9} 29|56r13
+94e7 Mode{53E9} 29|56r24
+95s7 Name{string} 29|56r45
+98U14*Close 29|58s7
+263U14*Put_Line 29|31s7 38s7 39s7 41s7
+X 18 a-tifiio.ads
+45k21*Fixed_IO 88e25 29|12r38
+X 23 a-tiunio.ads
+25K21*Unbounded_IO 61e29 29|2w18 57r7
+36U14*Put_Line=39:42 29|57s20
+X 25 calendar.ads
+18K9*Calendar=18:30 29|7w6 7r31 8w6 8r31
+X 28 logger.ads
+1K9*logger 3l5 3e11 29|10b14 61l5 61t11
+2U14*co_log 2>21 29|45b14 59l8 59t14
+2s21 message{string} 29|45b21 47r54
+X 29 logger.adb
+12K12 Fix_IO[18|45] 13r8
+15i4 Year{integer} 51m28 51r28
+15i9 Month{integer} 51m34 51r34
+15i15 Day{integer} 51m41 51r41
+16o4 Seconds{2|50O12} 51m46 51r46
+17i4 Time_And_Date{2|38I9} 50m7 51r13
+20V13 Output_Time{string} 20b13 20>25 43l8 43t19
+20o25 Time_In_Seconds{2|50O12} 32r21
+21f7 Time{float} 32m7 33r25 34m7 34r15 35r27 36r26
+22i7 Hours{integer} 33m7 34r28 38r30 40r33
+22i14 Minutes{integer} 35m7 40r62
+22i23 Seconds{integer} 36m7 40r93
+23a7 log_time{string} 40m7 41r26 42r14
+24r7 Temp_Unbounded_String{14|79R9}
+26a7 h{string} 39r16
+27a7 m{string}
+28a7 s{string}
+46p7 F{17|52P9} 56m21 56r21 57r29 58m13 58r13
+47r7 Data{14|79R9} 57r32
+48a7 t{string}
+

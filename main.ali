@@ -1,0 +1,73 @@
+V "GNAT Lib v2012"
+M P W=b
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U main%b		main.adb		a512be80 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W co_sensor%s		co_sensor.adb		co_sensor.ali
+W operator_console%s	operator_console.adb	operator_console.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-reatim.ads		20120510125754 63f07669
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125800 f9eb8f06
+D co_sensor.ads		20130528213232 65a1305e
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D main.adb		20130528224810 2bf730c3
+D operator_console.ads	20130528182556 d3294bc9
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taprop.ads		20120510125834 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-tassta.ads		20120510125836 3a253871
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+D s-win32.ads		20120510125840 07238fa2
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 2r5
+X 8 a-textio.ads
+49K13*Text_IO 471e16 15|1w10 2r9
+223U14*Get_Immediate 15|24s7
+263U14*Put_Line 15|15s7 16s7 17s7 18s7 19s7 20s7 31s25
+X 10 co_sensor.ads
+1K9*co_sensor 8e14 15|4w6 22r7
+5U14*initialise 15|22s17
+X 15 main.adb
+7U11*main 7b11 34l5 34t9
+9e4 a{character} 24m21 24r21 26r12
+X 16 operator_console.ads
+1K9*operator_console 15|3w6 27r22 28r22 29r22 16|7e21
+3U14*request_pump_status 15|27s39
+4U14*turn_pump_on 15|28s39
+5U14*turn_pump_off 15|29s39
+

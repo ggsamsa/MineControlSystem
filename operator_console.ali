@@ -1,0 +1,63 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U operator_console%b	operator_console.adb	1ba4c378 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W pump_controller%s	pump_controller.adb	pump_controller.ali
+
+U operator_console%s	operator_console.ads	d3294bc9 EE NE OO PK IL
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125800 f9eb8f06
+D interfac.ads		20120510125814 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D operator_console.ads	20130528182556 d3294bc9
+D operator_console.adb	20130528193018 f2250849
+D pump_controller.ads	20130528185510 02c5752c
+D system.ads		20120510125846 6daf90c4
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 12|2r6 3r5
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 3r9
+263U14*Put_Line 12|12s37 13s38
+X 11 operator_console.ads
+1K9*operator_console 7l5 7e21 12|5b14 27l5 27t21
+3U14*request_pump_status 12|7b14 15l8 15t27
+4U14*turn_pump_on 12|17b14 20l8 20t20
+5U14*turn_pump_off 12|22b14 25l8 25t21
+X 12 operator_console.adb
+8e7 ps{13|2E9} 10m7 11r12
+X 13 pump_controller.ads
+1K9*pump_controller 12|1w6 8r12 10r13 12r15 13r15 19r7 19r32 24r7 24r32 13|5e20
+2E9*pump_status 12|8r28 13|2e33
+2n25*on{2E9} 12|12r31 19r48
+2n29*off{2E9} 12|13r31 24r48
+3U14*set_pump 12|19s23 24s23
+4V13*request_status{2E9} 12|10s29
+
