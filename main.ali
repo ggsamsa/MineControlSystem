@@ -2,10 +2,11 @@ V "GNAT Lib v2012"
 M P W=b
 A -gnatA
 P ZX
-R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
 
-U main%b		main.adb		a512be80 NE OO SU IL
+U main%b		main.adb		a8e42e72 NE OO SU IL
 W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W co_sensor%s		co_sensor.adb		co_sensor.ali
 W operator_console%s	operator_console.adb	operator_console.ali
@@ -13,18 +14,20 @@ W operator_console%s	operator_console.adb	operator_console.ali
 D ada.ads		20120510125802 3ffc8e18
 D a-except.ads		20120510125752 ec1b44c1
 D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
 D a-ioexce.ads		20120510125752 8b9de6cd
 D a-reatim.ads		20120510125754 63f07669
 D a-stream.ads		20120510125756 2ca4ee37
 D a-tags.ads		20120510125758 6c0509d0
 D a-textio.ads		20120510125800 386df5d4
+D a-tiinio.ads		20120510125800 aa04e5d6
 D a-unccon.ads		20120510125800 f9eb8f06
-D co_sensor.ads		20130528213232 65a1305e
+D co_sensor.ads		20130529010618 e7fb8bce
 D interfac.ads		20120510125814 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrin.ads		20120510125814 341d0ddf
 D i-cstrea.ads		20120510125814 1bd72c32
-D main.adb		20130528224810 2bf730c3
+D main.adb		20130529013800 52109205
 D operator_console.ads	20130528182556 d3294bc9
 D system.ads		20120510125846 6daf90c4
 D s-atacco.ads		20120510125818 4c36d12f
@@ -54,20 +57,33 @@ D s-unstyp.ads		20120510125838 6ae15c76
 D s-wchcon.ads		20120510125840 bfeb2e3d
 D s-win32.ads		20120510125840 07238fa2
 X 1 ada.ads
-16K9*Ada 19e8 15|1r6 2r5
-X 8 a-textio.ads
-49K13*Text_IO 471e16 15|1w10 2r9
-223U14*Get_Immediate 15|24s7
-263U14*Put_Line 15|15s7 16s7 17s7 18s7 19s7 20s7 31s25
-X 10 co_sensor.ads
-1K9*co_sensor 8e14 15|4w6 22r7
-5U14*initialise 15|22s17
-X 15 main.adb
-7U11*main 7b11 34l5 34t9
-9e4 a{character} 24m21 24r21 26r12
-X 16 operator_console.ads
-1K9*operator_console 15|3w6 27r22 28r22 29r22 16|7e21
-3U14*request_pump_status 15|27s39
-4U14*turn_pump_on 15|28s39
-5U14*turn_pump_off 15|29s39
+16K9*Ada 19e8 17|1r6 2r5 3r6 12r11 14r17 51r22
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|45] 17|3w10 51r26
+X 9 a-textio.ads
+49K13*Text_IO 471e16 17|1w10 2r9 12r15 14r21
+52P9*File_Type(369R9) 17|12r23
+53n32*Out_File{53E9} 17|14r29
+86U14*Create 17|14s7
+223U14*Get_Immediate 17|44s7
+263U14*Put_Line 17|18s4 19s4 21s7 22s7 23s7 24s7 25s7 26s7 27s7 28s7 29s7
+. 30s7 31s7 32s7 33s7 34s7 35s7 36s7 37s7 38s7 39s7 40s7 54s25
+X 10 a-tiinio.ads
+55U14*Get 17|51s42[4|18]
+X 12 co_sensor.ads
+1K9*co_sensor 12e14 17|5w6 42r7 50r22 52r13
+5U14*initialise 17|42s17
+7U14*set_co 17|52s23
+8U14*read_co 17|50s32
+X 17 main.adb
+7U11*main 7b11 57l5 57t9
+9e4 a{character} 44m21 44r21 46r12
+10i4 value{integer} 51m46 51r46 52r30
+11U14 setup 11b14 15l8 15t13
+12p7 F{9|52P9} 14m14 14r14
+X 18 operator_console.ads
+1K9*operator_console 17|4w6 47r22 48r22 49r22 18|7e21
+3U14*request_pump_status 17|47s39
+4U14*turn_pump_on 17|48s39
+5U14*turn_pump_off 17|49s39
 

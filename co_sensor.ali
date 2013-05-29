@@ -3,16 +3,18 @@ A -gnatA
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnvnnnnvnnnvnnvnnnnnnnv1nnnnnn
 
-U co_sensor%b		co_sensor.adb		c9b6c17e OO PK IL
+U co_sensor%b		co_sensor.adb		62344590 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W logger%s		logger.adb		logger.ali  AD
 W operator_console%s	operator_console.adb	operator_console.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U co_sensor%s		co_sensor.ads		65a1305e EE OO PK IL
+U co_sensor%s		co_sensor.ads		e7fb8bce EE OO PK IL
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
@@ -31,8 +33,8 @@ D a-stream.ads		20120510125756 2ca4ee37
 D a-tags.ads		20120510125758 6c0509d0
 D a-textio.ads		20120510125800 386df5d4
 D a-unccon.ads		20120510125800 f9eb8f06
-D co_sensor.ads		20130528213232 65a1305e
-D co_sensor.adb		20130528225636 cbbe2234
+D co_sensor.ads		20130529010618 e7fb8bce
+D co_sensor.adb		20130529012124 e2661d4a
 D interfac.ads		20120510125814 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrin.ads		20120510125814 341d0ddf
@@ -41,11 +43,13 @@ D logger.ads		20130528212444 8ced6d09
 D operator_console.ads	20130528182556 d3294bc9
 D system.ads		20120510125846 6daf90c4
 D s-atacco.ads		20120510125818 4c36d12f
+D s-conca2.ads		20120510125822 fbd0f2fc
 D s-crtl.ads		20120510125824 ac77b159
 D s-exctab.ads		20120510125824 66e51330
 D s-ficobl.ads		20120510125824 443b9d66
 D s-finmas.ads		20120510125824 b95bb341
 D s-finroo.ads		20120510125824 4ff27390
+D s-imgint.ads		20120510125826 02dbe0c2
 D s-multip.ads		20120510125828 38ac9f73
 D s-osinte.ads		20120510125828 ecf1fbfd
 D s-parame.ads		20120510125832 b6e20cc0
@@ -67,21 +71,24 @@ D s-unstyp.ads		20120510125838 6ae15c76
 D s-wchcon.ads		20120510125840 bfeb2e3d
 D s-win32.ads		20120510125840 07238fa2
 X 1 ada.ads
-16K9*Ada 19e8 11|3r6 18r16
+16K9*Ada 19e8 11|3r6 20r7
 X 8 a-textio.ads
-49K13*Text_IO 471e16 11|3w10 18r20
-263U14*Put_Line 11|18s28
+49K13*Text_IO 471e16 11|3w10 20r11
+263U14*Put_Line 11|20s19
 X 10 co_sensor.ads
-1K9*co_sensor 8l5 8e14 11|6b14 24l5 24t14
-2I9*co_reading<integer> 3r23 11|7r17
-3i4*CO_HIGH{2I9} 11|16r23
+1K9*co_sensor 12l5 12e14 11|6b14 35l5 35t14
+2i4*co_reading{integer}
+3N4*CO_HIGH 11|28r23
 5U14*initialise 11|8b14 11l8 11t18
-6t9*thread 11|13b14 23l8 23t14
+7U14*set_co 7>21 11|13b14 16l8 16t14
+7i21 to{integer} 11|13b21 15r21
+8U14*read_co 11|18b14 21l8 21t15
+10t9*thread 11|25b14 34l8 34t14
 X 11 co_sensor.adb
-7i4 co_present{10|2I9} 16r10
+7i4 co_present{integer} 15m7 20r51 28r10
 X 16 logger.ads
-1K9*logger 11|2w6 19r10 16|3e11
-2U14*co_log 11|19s17
+1K9*logger 11|2w6 30r10 16|3e11
+2U14*co_log 11|30s17
 X 17 operator_console.ads
 1K9*operator_console 11|1w6 17|7e21
 
