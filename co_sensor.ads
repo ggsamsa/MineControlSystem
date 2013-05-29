@@ -5,7 +5,7 @@ package co_sensor is
    procedure initialise;
 
    procedure set_co(to : integer);
-   procedure read_co;
+   function read_co return Integer;
 
    task thread;
 

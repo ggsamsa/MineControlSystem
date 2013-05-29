@@ -1,15 +1,18 @@
 V "GNAT Lib v2012"
+A -gnatwl
+A -g
 A -gnatA
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
 
-U operator_console%b	operator_console.adb	1ba4c378 NE OO PK IL
+U operator_console%b	operator_console.adb	cdf34000 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
 W pump_controller%s	pump_controller.adb	pump_controller.ali
 
-U operator_console%s	operator_console.ads	d3294bc9 EE NE OO PK IL
+U operator_console%s	operator_console.ads	eb5b4c8e EE NE OO PK IL
+W ada.tags%s		a-tags.adb		a-tags.ali
 
 D ada.ads		20120510125802 3ffc8e18
 D a-except.ads		20120510125752 ec1b44c1
@@ -21,9 +24,9 @@ D a-textio.ads		20120510125800 386df5d4
 D a-unccon.ads		20120510125800 f9eb8f06
 D interfac.ads		20120510125814 129923ea
 D i-cstrea.ads		20120510125814 1bd72c32
-D operator_console.ads	20130528182556 d3294bc9
-D operator_console.adb	20130528193018 f2250849
-D pump_controller.ads	20130528185510 02c5752c
+D operator_console.ads	20130529023030 eb5b4c8e
+D operator_console.adb	20130529182258 a6d41355
+D pump_controller.ads	20130529195304 b811ea0f
 D system.ads		20120510125846 6daf90c4
 D s-crtl.ads		20120510125824 ac77b159
 D s-exctab.ads		20120510125824 66e51330
@@ -45,19 +48,26 @@ X 1 ada.ads
 16K9*Ada 19e8 12|2r6 3r5
 X 7 a-textio.ads
 49K13*Text_IO 471e16 12|2w10 3r9
-263U14*Put_Line 12|12s37 13s38
+263U14*Put_Line 12|12s37 13s38 30s26 31s31 32s25
 X 11 operator_console.ads
-1K9*operator_console 7l5 7e21 12|5b14 27l5 27t21
-3U14*request_pump_status 12|7b14 15l8 15t27
-4U14*turn_pump_on 12|17b14 20l8 20t20
-5U14*turn_pump_off 12|22b14 25l8 25t21
+1K9*operator_console 10l5 10e21 12|5b14 35l5 35t21
+3E9*alarm_reason 3e76 8r29 12|27r30
+3n26*HIGH_METHANE{3E9} 12|31r15
+3n40*HIGH_CO{3E9} 12|30r15
+3n49*NO_AIR_FLOW{3E9}
+3n62*UNKNOWN_ERROR{3E9}
+5U14*request_pump_status 12|7b14 15l8 15t27
+6U14*turn_pump_on 12|17b14 20l8 20t20
+7U14*turn_pump_off 12|22b14 25l8 25t21
+8U14*alarm 8>20 12|27b14 34l8 34t13
+8e20 reason{3E9} 12|27b21 29r12
 X 12 operator_console.adb
 8e7 ps{13|2E9} 10m7 11r12
 X 13 pump_controller.ads
-1K9*pump_controller 12|1w6 8r12 10r13 12r15 13r15 19r7 19r32 24r7 24r32 13|5e20
+1K9*pump_controller 12|1w6 8r12 10r13 12r15 13r15 19r7 19r32 24r7 24r32 13|12e20
 2E9*pump_status 12|8r28 13|2e33
 2n25*on{2E9} 12|12r31 19r48
 2n29*off{2E9} 12|13r31 24r48
-3U14*set_pump 12|19s23 24s23
-4V13*request_status{2E9} 12|10s29
+7U14*set_pump 12|19s23 24s23
+8V13*request_status{2E9} 12|10s29
 

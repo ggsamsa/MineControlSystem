@@ -1,23 +1,54 @@
 V "GNAT Lib v2012"
+A -gnatwl
+A -g
 A -gnatA
 P ZX
-R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnvnnvnnnnnnnnnnnnnn
 
-U pump_controller%b	pump_controller.adb	67a870d2 NE OO PK IL
+U pump_controller%b	pump_controller.adb	bb1ebaf7 NE OO PK IL
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ch4_status%s		ch4_status.adb		ch4_status.ali
+W logger%s		logger.adb		logger.ali
 
-U pump_controller%s	pump_controller.ads	02c5752c EE NE OO PK IL
+U pump_controller%s	pump_controller.ads	b811ea0f EE OO PK IL
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
 
-D pump_controller.ads	20130528185510 02c5752c
-D pump_controller.adb	20130528192920 656d05fe
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-unccon.ads		20120510125800 f9eb8f06
+D ch4_status.ads	20130529203406 b974b4d3
+D logger.ads		20130529160434 66c44354
+D pump_controller.ads	20130529195304 b811ea0f
+D pump_controller.adb	20130529204212 dcbfa77f
 D system.ads		20120510125846 6daf90c4
-X 1 pump_controller.ads
-1K9*pump_controller 5l5 5e20 2|1b14 18l5 18t20
-2E9*pump_status 2e33 3r28 4r35 2|2r19 4r28 13r35
-2n25*on{2E9} 2|6r15 7r26
-2n29*off{2E9} 2|2r34 9r26
-3U14*set_pump 3>23 2|4b14 11l8 11t16
-3e23 to{2E9} 2|4b23 6r10
-4V13*request_status{2E9} 2|13b13 16l8 16t22
-X 2 pump_controller.adb
-2e4 motor_status{1|2E9} 7m10 9m10 15r14
+D s-exctab.ads		20120510125824 66e51330
+D s-parame.ads		20120510125832 b6e20cc0
+D s-stalib.ads		20120510125834 f78bcf95
+D s-traent.ads		20120510125838 5221ee41
+X 4 ch4_status.ads
+1K9*ch4_status 5e15 7|1w6 1r22 12r13 12r42
+2n28*ch4_safe{2E9} 7|12r53
+3V13*read_ch4_status{2E9} 7|12s24
+X 5 logger.ads
+1K9*logger 4e11 7|2w6 14r13 21r10 33r10 36r7 45r7
+3U14*pump_log 7|14s20 21s17 33s17 36s14 45s14
+X 6 pump_controller.ads
+1K9*pump_controller 12l5 12e20 7|5b14 48l5 48t20
+2E9*pump_status 2e33 7r28 8r35 7|6r19 9r28 25r35
+2n25*on{2E9} 7|11r15 13r29 32r25 41r25
+2n29*off{2E9} 7|6r34 20r26 42r26
+3E9*pump_condition 3e46 7|7r22
+3n28*enabled{3E9} 7|7r40 34r29
+3n37*disabled{3E9} 7|44r26
+5X4*PUMP_NOT_SAFE 7|16r19
+7U14*set_pump 7>23 7|9b14 23l8 23t16
+7e23 to{2E9} 7|9b23 11r10
+8V13*request_status{2E9} 7|25b13 28l8 28t22
+9U14*is_safe 7|30b14 37l8 37t15
+10U14*not_safe 7|39b14 46l8 46t16
+X 7 pump_controller.adb
+6e4 motor_status{6|2E9} 13m13 20m10 27r14 32r10 41r10 42m10
+7e4 motor_condition{6|3E9} 34m10 44m7
 

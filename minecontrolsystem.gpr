@@ -6,5 +6,13 @@ project MineControlSystem is
    package Pretty_Printer is
    end Pretty_Printer;
 
+   package Builder is
+      for Default_Switches ("ada") use ("-gnatwl");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g");
+   end Compiler;
+
 end MineControlSystem;
 

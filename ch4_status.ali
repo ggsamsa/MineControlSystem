@@ -1,0 +1,25 @@
+V "GNAT Lib v2012"
+A -gnatwl
+A -g
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U ch4_status%b		ch4_status.adb		0bce060f NE OO PK IL
+
+U ch4_status%s		ch4_status.ads		b974b4d3 EE NE OO PK IL
+
+D ch4_status.ads	20130529203406 b974b4d3
+D ch4_status.adb	20130529204142 b2bab2dc
+D system.ads		20120510125846 6daf90c4
+X 1 ch4_status.ads
+1K9*ch4_status 5l5 5e15 2|1b14 16l5 16t15
+2E9*methane_status 2e49 3r36 4r37 2|3r14 5r36 10r37
+2n28*ch4_safe{2E9}
+2n38*ch4_unsafe{2E9} 2|3r32
+3V13*read_ch4_status{2E9} 2|5b13 8l8 8t23
+4U14*write_ch4_status 4>32 2|10b14 14l8 14t24
+4e32 to{2E9} 2|10b32 12r18
+X 2 ch4_status.adb
+3e4 methane{1|2E9} 7r14 12m7
+

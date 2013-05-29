@@ -1,9 +1,11 @@
 V "GNAT Lib v2012"
+A -gnatwl
+A -g
 A -gnatA
 P SS ZX
 R nnnnnnnnnnnnnnnnnnvnnvnnnvnnnnnnnnvnnnnnnvnnvnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
 
-U logger%b		logger.adb		30f87234 NE OO PK IL
+U logger%b		logger.adb		b6d88b26 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -14,7 +16,7 @@ W ada.text_io.unbounded_io%s  a-tiunio.ads	a-tiunio.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 
-U logger%s		logger.ads		8ced6d09 EE NE OO PK IL
+U logger%s		logger.ads		66c44354 EE NE OO PK IL
 
 D ada.ads		20120510125802 3ffc8e18
 D a-charac.ads		20120510125748 2d3ec45b
@@ -33,8 +35,8 @@ D a-tiunio.ads		20120510125800 759c6b0c
 D a-unccon.ads		20120510125800 f9eb8f06
 D interfac.ads		20120510125814 129923ea
 D i-cstrea.ads		20120510125814 1bd72c32
-D logger.ads		20130528212444 8ced6d09
-D logger.adb		20130529000322 ce755520
+D logger.ads		20130529160434 66c44354
+D logger.adb		20130529030312 a27c826f
 D system.ads		20120510125846 6daf90c4
 D s-atocou.ads		20120510125818 4a9c6cb4
 D s-atocou.adb		20120510125818 c864ec10
@@ -59,31 +61,36 @@ D s-traent.ads		20120510125838 5221ee41
 D s-unstyp.ads		20120510125838 6ae15c76
 D s-wchcon.ads		20120510125840 bfeb2e3d
 X 1 ada.ads
-16K9*Ada 19e8 19|1r6 2r6 3r6 4r5 5r5 10r11
+16K9*Ada 19e8 19|1r6 2r6 3r6 4r5 5r5 10r11 20r11
 X 8 a-string.ads
 16K13*Strings 35e16 19|1r10 5r9
 X 10 a-strunb.ads
 76K21*Unbounded 489e26 19|1w18 5r17
-79R9*Unbounded_String 473e14 19|11r14
-94V13*To_Unbounded_String{79R9} 19|11s34
+79R9*Unbounded_String 473e14 19|11r14 21r14
+94V13*To_Unbounded_String{79R9} 19|11s34 21s34
 X 13 a-textio.ads
-49K13*Text_IO 471e16 19|2r10 3w10 4r9 10r15
-52P9*File_Type(369R9) 19|10r23
-53n42*Append_File{53E9} 19|14r32
-92U14*Open 19|14s7
-93p7 File{52P9} 19|14r13
-94e7 Mode{53E9} 19|14r24
-95s7 Name{string} 19|14r45
-98U14*Close 19|16s7
+49K13*Text_IO 471e16 19|2r10 3w10 4r9 10r15 20r15
+52P9*File_Type(369R9) 19|10r23 20r23
+53n42*Append_File{53E9} 19|14r32 24r32
+92U14*Open 19|14s7 24s7
+93p7 File{52P9} 19|14r13 24r13
+94e7 Mode{53E9} 19|14r24 24r24
+95s7 Name{string} 19|14r45 24r45
+98U14*Close 19|16s7 26s7
 X 14 a-tiunio.ads
-25K21*Unbounded_IO 61e29 19|2w18 15r7
-36U14*Put_Line=39:42 19|15s20
+25K21*Unbounded_IO 61e29 19|2w18 15r7 25r7
+36U14*Put_Line=39:42 19|15s20 25s20
 X 18 logger.ads
-1K9*logger 3l5 3e11 19|7b14 19l5 19t11
+1K9*logger 4l5 4e11 19|7b14 29l5 29t11
 2U14*co_log 2>21 19|9b14 17l8 17t14
 2s21 message{string} 19|9b21 11r54
+3U14*pump_log 3>23 19|19b14 27l8 27t16
+3s23 message{string} 19|19b23 21r54
 X 19 logger.adb
 10p7 F{13|52P9} 14m21 14r21 15r29 16m13 16r13
 11r7 Data{10|79R9} 15r32
 12a7 t{string}
+20p7 F{13|52P9} 24m21 24r21 25r29 26m13 26r13
+21r7 Data{10|79R9} 25r32
+22a7 t{string}
 

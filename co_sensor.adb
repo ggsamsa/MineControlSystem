@@ -1,7 +1,7 @@
 with operator_console;
 with logger;
 with Ada.Text_IO;
-
+with operator_console;
 
 package body co_sensor is
    co_present : integer := 700;
@@ -15,21 +15,22 @@ package body co_sensor is
       co_present := to;
    end set_co;
 
-   procedure read_co is
+   function read_co return Integer is
    begin
-      Ada.Text_IO.Put_Line ("-> " & Integer'Image(co_present));
+      return co_present;
    end read_co;
 
 
 
    task body thread is
    begin
-      -- co_present := valor
-      if co_present > CO_HIGH then
-         --         operator_console.alarm(HIGH_CO);
-         logger.co_log("HIGH_CO");
-         null;
+      loop
+         if co_present > CO_HIGH then
+            operator_console.alarm(operator_console.HIGH_CO);
+            logger.co_log("HIGH_CO");
+         end if;
+         delay 15.0;
+      end loop;
 
-      end if;
    end thread;
 end co_sensor;

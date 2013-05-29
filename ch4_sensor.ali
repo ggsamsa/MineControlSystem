@@ -3,21 +3,19 @@ A -gnatwl
 A -g
 A -gnatA
 P ZX
-R nnnnnnnnnvnnnnnnnnnnnnnvnvnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnvnnnnvnnnvnnvnnnnnnnv1nnnnnn
+R nnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnvnnnnvnnnvnnvnnnnnnnv1nnnnnn
 
-U co_sensor%b		co_sensor.adb		9996d6d8 OO PK IL
-W ada%s			ada.ads			ada.ali
+U ch4_sensor%b		ch4_sensor.adb		db5e64cd OO PK IL
 W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
-W ada.tags%s		a-tags.adb		a-tags.ali
-W ada.text_io%s		a-textio.adb		a-textio.ali
+W ch4_status%s		ch4_status.adb		ch4_status.ali  AD
 W logger%s		logger.adb		logger.ali  AD
 W operator_console%s	operator_console.adb	operator_console.ali  AD
+W pump_controller%s	pump_controller.adb	pump_controller.ali  AD
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U co_sensor%s		co_sensor.ads		303fff04 EE OO PK IL
+U ch4_sensor%s		ch4_sensor.ads		c64476c1 EE OO PK IL
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
-W ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
@@ -29,39 +27,29 @@ D ada.ads		20120510125802 3ffc8e18
 D a-calend.ads		20120510125748 d86d6c8c
 D a-caldel.ads		20120510125748 9f20b83d
 D a-except.ads		20120510125752 ec1b44c1
-D a-finali.ads		20120510125752 52ecdc1b
-D a-ioexce.ads		20120510125752 8b9de6cd
 D a-reatim.ads		20120510125754 63f07669
-D a-stream.ads		20120510125756 2ca4ee37
-D a-tags.ads		20120510125758 6c0509d0
-D a-textio.ads		20120510125800 386df5d4
 D a-unccon.ads		20120510125800 f9eb8f06
-D co_sensor.ads		20130529171418 303fff04
-D co_sensor.adb		20130529171356 f7009f5c
+D ch4_sensor.ads	20130529203220 c64476c1
+D ch4_sensor.adb	20130529203308 91e0430a
+D ch4_status.ads	20130529203406 b974b4d3
 D interfac.ads		20120510125814 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrin.ads		20120510125814 341d0ddf
-D i-cstrea.ads		20120510125814 1bd72c32
 D logger.ads		20130529160434 66c44354
 D operator_console.ads	20130529023030 eb5b4c8e
+D pump_controller.ads	20130529195304 b811ea0f
 D system.ads		20120510125846 6daf90c4
 D s-atacco.ads		20120510125818 4c36d12f
-D s-crtl.ads		20120510125824 ac77b159
 D s-exctab.ads		20120510125824 66e51330
-D s-ficobl.ads		20120510125824 443b9d66
-D s-finmas.ads		20120510125824 b95bb341
-D s-finroo.ads		20120510125824 4ff27390
 D s-multip.ads		20120510125828 38ac9f73
 D s-osinte.ads		20120510125828 ecf1fbfd
 D s-parame.ads		20120510125832 b6e20cc0
-D s-pooglo.ads		20120510125832 542f33d0
 D s-soflin.ads		20120510125832 24c8153c
 D s-stache.ads		20120510125834 596fc1b4
 D s-stausa.ads		20120510125834 017a0a05
 D s-stalib.ads		20120510125834 f78bcf95
 D s-stoele.ads		20120510125834 facd7d98
 D s-stoele.adb		20120510125834 afc5dc80
-D s-stopoo.ads		20120510125834 7b8fbeee
 D s-tasinf.ads		20120510125836 859198ad
 D s-taspri.ads		20120510125836 196697f7
 D s-taprop.ads		20120510125834 1dd2e1b6
@@ -69,28 +57,29 @@ D s-taskin.ads		20120510125836 5e24fb30
 D s-tassta.ads		20120510125836 3a253871
 D s-traent.ads		20120510125838 5221ee41
 D s-unstyp.ads		20120510125838 6ae15c76
-D s-wchcon.ads		20120510125840 bfeb2e3d
 D s-win32.ads		20120510125840 07238fa2
-X 1 ada.ads
-16K9*Ada 19e8 13|3r6
-X 10 a-textio.ads
-49K13*Text_IO 471e16 13|3w10
-X 12 co_sensor.ads
-1K9*co_sensor 12l5 12e14 13|6b14 36l5 36t14
-2i4*co_reading{integer}
-3N4*CO_HIGH 13|28r26
-5U14*initialise 13|8b14 11l8 11t18
-7U14*set_co 7>21 13|13b14 16l8 16t14
-7i21 to{integer} 13|13b21 15r21
-8V13*read_co{integer} 13|18b13 21l8 21t15
-10t9*thread 13|25b14 35l8 35t14
-X 13 co_sensor.adb
-7i4 co_present{integer} 15m7 20r14 28r13
-X 18 logger.ads
-1K9*logger 13|2w6 30r13 18|4e11
-2U14*co_log 13|30s20
-X 19 operator_console.ads
-1K9*operator_console 13|1w6 4w6 29r13 29r36 19|10e21
-3n40*HIGH_CO{3E9} 13|29r53
-8U14*alarm 13|29s30
+X 7 ch4_sensor.ads
+1K9*ch4_sensor 13l5 13e15 8|6b14 34l5 34t15
+2N4*CH4_HIGH 8|22r27
+8U14*set_ch4 8>23 8|9b14 12l8 12t15
+8i23 to{integer} 8|9b23 11r22
+9V13*read_ch4{integer} 8|14b13 17t7
+11t9*thread 8|19b14 33l8 33t14
+X 8 ch4_sensor.adb
+7i4 ch4_present{integer} 11m7 16r14 22r13
+X 9 ch4_status.ads
+1K9*ch4_status 8|4w6 23r13 23r41 28r13 28r41 9|5e15
+2n28*ch4_safe{2E9} 8|28r52
+2n38*ch4_unsafe{2E9} 8|23r52
+4U14*write_ch4_status 8|23s24 28s24
+X 13 logger.ads
+1K9*logger 8|1w6 25r13 13|4e11
+2U14*co_log 8|25s20
+X 14 operator_console.ads
+1K9*operator_console 8|2w6 24r13 24r36 14|10e21
+3n26*HIGH_METHANE{3E9} 8|24r53
+8U14*alarm 8|24s30
+X 15 pump_controller.ads
+1K9*pump_controller 8|3w6 26r13 15|12e20
+10U14*not_safe 8|26s29
 

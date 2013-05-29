@@ -1,15 +1,20 @@
 V "GNAT Lib v2012"
 M P W=b
+A -gnatwl
+A -g
 A -gnatA
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
 
-U main%b		main.adb		a8e42e72 NE OO SU IL
+U main%b		main.adb		5bca2f73 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W ch4_sensor%s		ch4_sensor.adb		ch4_sensor.ali
 W co_sensor%s		co_sensor.adb		co_sensor.ali
 W operator_console%s	operator_console.adb	operator_console.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
 
 D ada.ads		20120510125802 3ffc8e18
 D a-except.ads		20120510125752 ec1b44c1
@@ -22,20 +27,23 @@ D a-tags.ads		20120510125758 6c0509d0
 D a-textio.ads		20120510125800 386df5d4
 D a-tiinio.ads		20120510125800 aa04e5d6
 D a-unccon.ads		20120510125800 f9eb8f06
-D co_sensor.ads		20130529010618 e7fb8bce
+D ch4_sensor.ads	20130529203220 c64476c1
+D co_sensor.ads		20130529171418 303fff04
 D interfac.ads		20120510125814 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrin.ads		20120510125814 341d0ddf
 D i-cstrea.ads		20120510125814 1bd72c32
-D main.adb		20130529013800 52109205
-D operator_console.ads	20130528182556 d3294bc9
+D main.adb		20130529182622 88cc9648
+D operator_console.ads	20130529023030 eb5b4c8e
 D system.ads		20120510125846 6daf90c4
 D s-atacco.ads		20120510125818 4c36d12f
+D s-conca2.ads		20120510125822 fbd0f2fc
 D s-crtl.ads		20120510125824 ac77b159
 D s-exctab.ads		20120510125824 66e51330
 D s-ficobl.ads		20120510125824 443b9d66
 D s-finmas.ads		20120510125824 b95bb341
 D s-finroo.ads		20120510125824 4ff27390
+D s-imgint.ads		20120510125826 02dbe0c2
 D s-multip.ads		20120510125828 38ac9f73
 D s-osinte.ads		20120510125828 ecf1fbfd
 D s-parame.ads		20120510125832 b6e20cc0
@@ -57,33 +65,40 @@ D s-unstyp.ads		20120510125838 6ae15c76
 D s-wchcon.ads		20120510125840 bfeb2e3d
 D s-win32.ads		20120510125840 07238fa2
 X 1 ada.ads
-16K9*Ada 19e8 17|1r6 2r5 3r6 12r11 14r17 51r22
+16K9*Ada 19e8 18|1r6 2r5 3r6 13r19 14r19 16r23 17r25 59r22 61r22
 X 4 a-inteio.ads
-18K13*Integer_Text_IO[10|45] 17|3w10 51r26
+18K13*Integer_Text_IO[10|45] 18|3w10 59r26 61r26
 X 9 a-textio.ads
-49K13*Text_IO 471e16 17|1w10 2r9 12r15 14r21
-52P9*File_Type(369R9) 17|12r23
-53n32*Out_File{53E9} 17|14r29
-86U14*Create 17|14s7
-223U14*Get_Immediate 17|44s7
-263U14*Put_Line 17|18s4 19s4 21s7 22s7 23s7 24s7 25s7 26s7 27s7 28s7 29s7
-. 30s7 31s7 32s7 33s7 34s7 35s7 36s7 37s7 38s7 39s7 40s7 54s25
+49K13*Text_IO 471e16 18|1w10 2r9 13r23 14r23 16r27 17r29
+52P9*File_Type(369R9) 18|13r31 14r31
+53n32*Out_File{53E9} 18|16r35 17r37
+86U14*Create 18|16s7 17s7
+98U14*Close 18|18s7 19s7
+223U14*Get_Immediate 18|51s7
+263U14*Put_Line 18|24s4 25s4 27s7 28s7 29s7 30s7 31s7 32s7 33s7 34s7 35s7
+. 36s7 37s7 38s7 39s7 40s7 41s7 42s7 43s7 44s7 45s7 46s7 47s7 57s22 58s22
+. 64s25
 X 10 a-tiinio.ads
-55U14*Get 17|51s42[4|18]
-X 12 co_sensor.ads
-1K9*co_sensor 12e14 17|5w6 42r7 50r22 52r13
-5U14*initialise 17|42s17
-7U14*set_co 17|52s23
-8U14*read_co 17|50s32
-X 17 main.adb
-7U11*main 7b11 57l5 57t9
-9e4 a{character} 44m21 44r21 46r12
-10i4 value{integer} 51m46 51r46 52r30
-11U14 setup 11b14 15l8 15t13
-12p7 F{9|52P9} 14m14 14r14
-X 18 operator_console.ads
-1K9*operator_console 17|4w6 47r22 48r22 49r22 18|7e21
-3U14*request_pump_status 17|47s39
-4U14*turn_pump_on 17|48s39
-5U14*turn_pump_off 17|49s39
+55U14*Get 18|59s42[4|18] 61s42[4|18]
+X 12 ch4_sensor.ads
+1K9*ch4_sensor 13e15 18|6w6 58r54 62r13
+8U14*set_ch4 18|62s24
+9V13*read_ch4{integer} 18|58s65
+X 13 co_sensor.ads
+1K9*co_sensor 12e14 18|5w6 49r7 57r53 60r13
+5U14*initialise 18|49s17
+7U14*set_co 18|60s23
+8V13*read_co{integer} 18|57s63
+X 18 main.adb
+8U11*main 8b11 67l5 67t9
+10e4 a{character} 51m21 51r21 53r12
+11i4 value{integer} 59m46 59r46 60r30 61m46 61r46 62r32
+12U14 setup 12b14 20l8 20t13 23s4
+13p7 co_file{9|52P9} 16m14 16r14 18m13 18r13
+14p7 pump_file{9|52P9} 17m14 17r14 19m13 19r13
+X 19 operator_console.ads
+1K9*operator_console 18|4w6 54r22 55r22 56r22 19|10e21
+5U14*request_pump_status 18|54s39
+6U14*turn_pump_on 18|55s39
+7U14*turn_pump_off 18|56s39
 

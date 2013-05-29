@@ -24,4 +24,12 @@ package body operator_console is
       pump_controller.set_pump(pump_controller.off);
    end turn_pump_off;
 
+   procedure alarm (reason : alarm_reason) is
+   begin
+      case reason is
+         when HIGH_CO => Put_Line ("/!\/!\ HIGH_CO /!\/!\");
+         when HIGH_METHANE => Put_Line ("/!\/!\ HIGH_METHANE /!\/!\");
+         when others => Put_Line ("");
+      end case;
+   end alarm;
 end operator_console;
