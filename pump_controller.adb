@@ -15,7 +15,6 @@ package body pump_controller is
          else
             raise PUMP_NOT_SAFE;
          end if;
-
       else
          motor_status := off;
          logger.pump_log ("Pump is OFF");

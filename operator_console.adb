@@ -2,6 +2,7 @@ with pump_controller;
 with Ada.Text_IO;
 use Ada.Text_IO;
 
+
 package body operator_console is
 
    procedure request_pump_status is
@@ -17,6 +18,8 @@ package body operator_console is
    procedure turn_pump_on is
    begin
       pump_controller.set_pump(pump_controller.on);
+   exception
+         when pump_controller.PUMP_NOT_SAFE => Put_Line("/!\/!\ PUMP NOT SAFE /!\/!\");
    end turn_pump_on;
 
    procedure turn_pump_off is
@@ -29,6 +32,7 @@ package body operator_console is
       case reason is
          when HIGH_CO => Put_Line ("/!\/!\ HIGH_CO /!\/!\");
          when HIGH_METHANE => Put_Line ("/!\/!\ HIGH_METHANE /!\/!\");
+         when NO_AIR_FLOW => Put_Line ("/!\/!\ NO_AIR_FLOW /!\/!\");
          when others => Put_Line ("");
       end case;
    end alarm;

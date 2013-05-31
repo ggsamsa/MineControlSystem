@@ -1,7 +1,9 @@
-with logger;
 with operator_console;
+with logger;
+
 with pump_controller;
 with ch4_status;
+use pump_controller;
 
 package body ch4_sensor is
    ch4_present : integer := 800;
@@ -22,12 +24,13 @@ package body ch4_sensor is
          if ch4_present > CH4_HIGH then
             ch4_status.write_ch4_status(ch4_status.ch4_unsafe);
             operator_console.alarm(operator_console.HIGH_METHANE);
-            logger.co_log("HIGH_CO");
+            logger.ch4_log("HIGH_METHANE");
             pump_controller.not_safe;
          else
             ch4_status.write_ch4_status(ch4_status.ch4_safe);
+            logger.ch4_log("METHANE_SAFE");
          end if;
-         delay 15.0;
+         delay 35.0;
       end loop;
 
    end thread;

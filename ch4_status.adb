@@ -1,6 +1,6 @@
 package body ch4_status is
 
-   methane : methane_status := ch4_unsafe;
+   methane : methane_status;
 
    function read_ch4_status return methane_status is
    begin
@@ -10,7 +10,6 @@ package body ch4_status is
    procedure write_ch4_status (to : methane_status) is
    begin
       methane := to;
-
    end write_ch4_status;
 
 end ch4_status;

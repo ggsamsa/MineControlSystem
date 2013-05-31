@@ -4,17 +4,22 @@ A -gnatwl
 A -g
 A -gnatA
 P ZX
-R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
+R nnnnnnnnnnnnnnnvnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
 
-U main%b		main.adb		5bca2f73 NE OO SU IL
+U main%b		main.adb		4af6263e NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W air_flow_sensor%s	air_flow_sensor.adb	air_flow_sensor.ali
 W ch4_sensor%s		ch4_sensor.adb		ch4_sensor.ali
 W co_sensor%s		co_sensor.adb		co_sensor.ali
+W device%s		device.ads		device.ali
+W mytime%s		mytime.adb		mytime.ali
 W operator_console%s	operator_console.adb	operator_console.ali
 W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
 W system.img_int%s	s-imgint.adb		s-imgint.ali
+W water_flow_sensor%s	water_flow_sensor.adb	water_flow_sensor.ali
 
 D ada.ads		20120510125802 3ffc8e18
 D a-except.ads		20120510125752 ec1b44c1
@@ -27,13 +32,16 @@ D a-tags.ads		20120510125758 6c0509d0
 D a-textio.ads		20120510125800 386df5d4
 D a-tiinio.ads		20120510125800 aa04e5d6
 D a-unccon.ads		20120510125800 f9eb8f06
+D air_flow_sensor.ads	20130530221104 aa1cf1fd
 D ch4_sensor.ads	20130529203220 c64476c1
 D co_sensor.ads		20130529171418 303fff04
+D device.ads		20130530220922 c73b85c9
 D interfac.ads		20120510125814 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrin.ads		20120510125814 341d0ddf
 D i-cstrea.ads		20120510125814 1bd72c32
-D main.adb		20130529182622 88cc9648
+D main.adb		20130531164432 76e4290d
+D mytime.ads		20130530024044 c94f30c5
 D operator_console.ads	20130529023030 eb5b4c8e
 D system.ads		20120510125846 6daf90c4
 D s-atacco.ads		20120510125818 4c36d12f
@@ -43,6 +51,7 @@ D s-exctab.ads		20120510125824 66e51330
 D s-ficobl.ads		20120510125824 443b9d66
 D s-finmas.ads		20120510125824 b95bb341
 D s-finroo.ads		20120510125824 4ff27390
+D s-imgboo.ads		20120510125824 f5d971eb
 D s-imgint.ads		20120510125826 02dbe0c2
 D s-multip.ads		20120510125828 38ac9f73
 D s-osinte.ads		20120510125828 ecf1fbfd
@@ -64,41 +73,60 @@ D s-traent.ads		20120510125838 5221ee41
 D s-unstyp.ads		20120510125838 6ae15c76
 D s-wchcon.ads		20120510125840 bfeb2e3d
 D s-win32.ads		20120510125840 07238fa2
+D water_flow_sensor.ads	20130530015254 4b7cf2f9
 X 1 ada.ads
-16K9*Ada 19e8 18|1r6 2r5 3r6 13r19 14r19 16r23 17r25 59r22 61r22
+16K9*Ada 19e8 20|1r6 2r5 3r6 19r19 20r19 21r19 22r19 23r19 25r23 26r24 27r25
+. 28r23 29r23 74r13 77r13
 X 4 a-inteio.ads
-18K13*Integer_Text_IO[10|45] 18|3w10 59r26 61r26
+18K13*Integer_Text_IO[10|45] 20|3w10 74r17 77r17
 X 9 a-textio.ads
-49K13*Text_IO 471e16 18|1w10 2r9 13r23 14r23 16r27 17r29
-52P9*File_Type(369R9) 18|13r31 14r31
-53n32*Out_File{53E9} 18|16r35 17r37
-86U14*Create 18|16s7 17s7
-98U14*Close 18|18s7 19s7
-223U14*Get_Immediate 18|51s7
-263U14*Put_Line 18|24s4 25s4 27s7 28s7 29s7 30s7 31s7 32s7 33s7 34s7 35s7
-. 36s7 37s7 38s7 39s7 40s7 41s7 42s7 43s7 44s7 45s7 46s7 47s7 57s22 58s22
-. 64s25
+49K13*Text_IO 471e16 20|1w10 2r9 19r23 20r23 21r23 22r23 23r23 25r27 26r28
+. 27r29 28r27 29r27
+52P9*File_Type(369R9) 20|19r31 20r31 21r31 22r31 23r31
+53n32*Out_File{53E9} 20|25r35 26r36 27r37 28r35 29r35
+86U14*Create 20|25s7 26s7 27s7 28s7 29s7
+98U14*Close 20|30s7 31s7 32s7 33s7 34s7
+223U14*Get_Immediate 20|67s7
+242U14*Put 20|73s22 76s22
+263U14*Put_Line 20|40s4 41s4 43s7 44s7 45s7 46s7 47s7 48s7 49s7 50s7 51s7
+. 52s7 53s7 54s7 55s7 56s7 57s7 58s7 59s7 60s7 61s7 62s7 63s7 86s25
 X 10 a-tiinio.ads
-55U14*Get 18|59s42[4|18] 61s42[4|18]
-X 12 ch4_sensor.ads
-1K9*ch4_sensor 13e15 18|6w6 58r54 62r13
-8U14*set_ch4 18|62s24
-9V13*read_ch4{integer} 18|58s65
-X 13 co_sensor.ads
-1K9*co_sensor 12e14 18|5w6 49r7 57r53 60r13
-5U14*initialise 18|49s17
-7U14*set_co 18|60s23
-8V13*read_co{integer} 18|57s63
-X 18 main.adb
-8U11*main 8b11 67l5 67t9
-10e4 a{character} 51m21 51r21 53r12
-11i4 value{integer} 59m46 59r46 60r30 61m46 61r46 62r32
-12U14 setup 12b14 20l8 20t13 23s4
-13p7 co_file{9|52P9} 16m14 16r14 18m13 18r13
-14p7 pump_file{9|52P9} 17m14 17r14 19m13 19r13
-X 19 operator_console.ads
-1K9*operator_console 18|4w6 54r22 55r22 56r22 19|10e21
-5U14*request_pump_status 18|54s39
-6U14*turn_pump_on 18|55s39
-7U14*turn_pump_off 18|56s39
+55U14*Get 20|74s33[4|18] 77s33[4|18]
+X 12 air_flow_sensor.ads
+2K9*air_flow_sensor 12e20 20|8w6 54r48 79r27 81r16 83r16
+5V13*read_air_flow{boolean} 20|54s64 79s43
+7U14*set_operation 20|81s32 83s32
+X 13 ch4_sensor.ads
+1K9*ch4_sensor 13e15 20|6w6 52r48 78r13
+8U14*set_ch4 20|78s24
+9V13*read_ch4{integer} 20|52s59
+X 14 co_sensor.ads
+1K9*co_sensor 12e14 20|5w6 51r48 65r7 75r13
+5U14*initialise 20|65s17
+7U14*set_co 20|75s23
+8V13*read_co{integer} 20|51s58
+X 15 device.ads
+1K9*device 24e11 20|10w6 81r46 83r46
+3n30*clear{3E9} 20|81r53
+3n37*set{3E9} 20|83r53
+X 20 main.adb
+12U11*main 12b11 89l5 89t9
+14e4 a{character} 67m21 67r21 69r12
+15i4 value{integer} 74m37 74r37 75r30 77m37 77r37 78r32
+16b4 t{boolean} 79m22 80r16
+18U14 setup 18b14 35l8 35t13 39s4
+19p7 co_file{9|52P9} 25m14 25r14 30m13 30r13
+20p7 ch4_file{9|52P9} 26m14 26r14 31m13 31r13
+21p7 pump_file{9|52P9} 27m14 27r14 32m13 32r13
+22p7 wf_file{9|52P9} 28m14 28r14 33m13 33r13
+23p7 af_file{9|52P9} 29m14 29r14 34m13 34r13
+X 21 mytime.ads
+1K9*mytime 20|9w6 21|3e11
+X 22 operator_console.ads
+1K9*operator_console 20|4w6 70r22 71r22 72r22 22|10e21
+5U14*request_pump_status 20|70s39
+6U14*turn_pump_on 20|71s39
+7U14*turn_pump_off 20|72s39
+X 53 water_flow_sensor.ads
+1K9*water_flow_sensor 20|7w6 53|8e22
 

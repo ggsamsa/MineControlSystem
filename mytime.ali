@@ -1,0 +1,100 @@
+V "GNAT Lib v2012"
+A -gnatwl
+A -g
+A -gnatA
+P SS ZX
+R nnnnnnnvnvnnnnnnnnnnnnnvvvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U mytime%b		mytime.adb		5fb72862 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W calendar%s		calendar.ads		calendar.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U mytime%s		mytime.ads		c94f30c5 EE NE OO PK IL
+
+D ada.ads		20120510125802 3ffc8e18
+D a-calend.ads		20120510125748 d86d6c8c
+D a-charac.ads		20120510125748 2d3ec45b
+D a-chlat1.ads		20120510125748 2825df20
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-string.ads		20120510125756 90ac6797
+D a-strmap.ads		20120510125756 9cb836fb
+D a-strunb.ads		20120510125756 3f91d4c5
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-unccon.ads		20120510125800 f9eb8f06
+D calendar.ads		20120510125804 2cb525cd
+D interfac.ads		20120510125814 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D mytime.ads		20130530024044 c94f30c5
+D mytime.adb		20130530184612 4bfa95df
+D system.ads		20120510125846 6daf90c4
+D s-atocou.ads		20120510125818 4a9c6cb4
+D s-atocou.adb		20120510125818 c864ec10
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-imgint.ads		20120510125826 02dbe0c2
+D s-maccod.ads		20120510125826 0fbb7bce
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-secsta.ads		20120510125832 eea35a36
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-stposu.ads		20120510125834 197be7e5
+D s-stratt.ads		20120510125834 aedef97e
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 21|1r9 1r34 2r9 2r34 4r6 5r5
+X 2 a-calend.ads
+38I9*Time 21|14r24
+50O12*Day_Duration{duration} 21|13r18 16r39
+52V13*Clock{38I9} 21|35s24
+63U14*Split 21|36s7
+X 7 a-inteio.ads
+18K13*Integer_Text_IO[15|45] 21|2w13 2r38
+X 10 a-string.ads
+16K13*Strings 35e16 21|4r10 5r9
+X 12 a-strunb.ads
+76K21*Unbounded 489e26 21|4w18 5r17
+X 14 a-textio.ads
+49K13*Text_IO 471e16 21|1w13 1r38
+242U14*Put 21|27s10 29s10
+X 15 a-tiinio.ads
+65U14*Put 21|26s10[7|18] 28s10[7|18] 30s10[7|18]
+X 17 calendar.ads
+18K9*Calendar=18:30 21|3w6 3r31
+X 20 mytime.ads
+1K9*mytime 3l5 3e11 21|7b14 40l5 40t11
+2U14*output_time 21|9b14 38l8 38t19
+X 21 mytime.adb
+12i7 Year{integer} 36m28 36r28
+12i12 Month{integer} 36m34 36r34
+12i18 Day{integer} 36m41 36r41
+13o7 Seconds{2|50O12} 36m46 36r46 37r11
+14i7 Time_And_Date{2|38I9} 35m7 36r13
+16U17 sub 16b17 16>21 32l11 32t14 37s7
+16o21 Time_In_Seconds{2|50O12} 21r24
+17f10 Time{float} 21m10 22r28 23m10 23r18 24r30 25r29
+18i10 Hours{integer} 22m10 23r31 26r14 31r31
+18i17 Minutes{integer} 24m10 28r14
+18i26 Seconds{integer} 25m10 30r14
+19a10 tmp{string} 31m10
+

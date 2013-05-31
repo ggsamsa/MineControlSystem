@@ -1,0 +1,32 @@
+V "GNAT Lib v2012"
+A -gnatwl
+A -g
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U device%s		device.ads		c73b85c9 NE OO PK IL
+
+D device.ads		20130530220922 c73b85c9
+D system.ads		20120510125846 6daf90c4
+X 1 device.ads
+1K9*device 24l5 24e11
+2E9*device_error 2e37 8r22 18r8
+2n26*clear{2E9} 18r26
+2n33*set{2E9} 18r38
+3E9*device_operation 3e41 9r22 19r8
+3n30*clear{3E9} 19r30
+3n37*set{3E9} 19r42
+4E9*interrupt_status 4e68 11r22 20r8
+4n30*Interrupt_disabled{4E9} 20r30
+4n50*Interrupt_enabled{4E9} 21r30
+5E9*device_status 5e59 12r22 22r8
+5n27*Device_disabled{5E9} 22r27
+5n44*Device_enabled{5E9} 23r27
+6R9*csr 13e17
+8e10*error_bit{2E9}
+9e10*operation{3E9}
+10b10*done{boolean}
+11e10*interrupt{4E9}
+12e10*device{5E9}
+
