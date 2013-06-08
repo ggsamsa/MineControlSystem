@@ -108,9 +108,9 @@ begin
             ch4_sensor.set_ch4(value);
          when '8' => t := air_flow_sensor.read_air_flow;
             if t = true then
-               air_flow_sensor.set_operation(device.clear);
+               air_flow_sensor.set_air_flow(false);
             else
-               air_flow_sensor.set_operation(device.set);
+               air_flow_sensor.set_air_flow(true);
             end if;
          when '9' => hlw_handler.write_water_mark(hlw_handler.high);
          when '0' => hlw_handler.write_water_mark(hlw_handler.low);

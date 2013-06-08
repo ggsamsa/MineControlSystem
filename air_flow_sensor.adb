@@ -6,12 +6,10 @@ use device;
 package body air_flow_sensor is
    air_flow : boolean;
 
-   afcsr : device.csr;
-
-   procedure set_operation(to : device.device_operation) is
+   procedure set_air_flow(to : Boolean) is
    begin
-      afcsr.operation := to;
-   end set_operation;
+      air_flow := to;
+   end set_air_flow;
 
 
    function read_air_flow return boolean is
@@ -22,7 +20,6 @@ package body air_flow_sensor is
    task body thread is
    begin
       loop
-         air_flow := afcsr.operation = device.set;
          if not air_flow then
             operator_console.alarm(operator_console.NO_AIR_FLOW);
             logger.air_flow_log("NO_AIR_FLOW");
