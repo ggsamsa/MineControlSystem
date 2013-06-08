@@ -1,14 +1,16 @@
 with device;
 use device;
-
+with pump_controller;
+with hlw_handler;
 with logger;
+use hlw_handler;
+use pump_controller;
 
 package body water_flow_sensor is
-   flow : water_flow := no;
-
+   flow : Boolean := false;
    wfcsr : device.csr;
 
-   function read_water_flow return water_flow is
+   function read_water_flow return Boolean is
    begin
       return flow;
    end read_water_flow;
@@ -17,11 +19,12 @@ package body water_flow_sensor is
    begin
       loop
 
-         if wfcsr.operation = device.set then
-            flow := yes;
+         if hlw_handler.read_water_mark /= hlw_handler.low
+           and pump_controller.request_status = pump_controller.on then
+            flow := true;
             logger.water_flow_log("Water flowing");
          else
-            flow := no;
+            flow := false;
             logger.water_flow_log("Water not flowing");
          end if;
          delay 25.0;

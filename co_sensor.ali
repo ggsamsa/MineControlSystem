@@ -5,7 +5,7 @@ A -gnatA
 P ZX
 R nnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnvnnnnvnnnvnnvnnnnnnnv1nnnnnn
 
-U co_sensor%b		co_sensor.adb		2a71fb87 OO PK IL
+U co_sensor%b		co_sensor.adb		d14cb5e1 OO PK IL
 W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 W logger%s		logger.adb		logger.ali  AD
 W operator_console%s	operator_console.adb	operator_console.ali  AD
@@ -33,7 +33,7 @@ D interfac.ads		20120510125814 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrin.ads		20120510125814 341d0ddf
 D logger.ads		20130531002022 1152eb77
-D operator_console.ads	20130529023030 eb5b4c8e
+D operator_console.ads	20130601175740 106602e8
 D system.ads		20120510125846 6daf90c4
 D s-atacco.ads		20120510125818 4c36d12f
 D s-exctab.ads		20120510125824 66e51330
@@ -69,7 +69,7 @@ X 12 logger.ads
 1K9*logger 8|1w6 1r18 12|7e11
 2U14*co_log 8|28s13
 X 13 operator_console.ads
-1K9*operator_console 8|2w6 27r13 27r36 13|10e21
+1K9*operator_console 8|2w6 27r13 27r36 13|13e21
 3n40*HIGH_CO{3E9} 8|27r53
-8U14*alarm 8|27s30
+9U14*alarm 8|27s30
 

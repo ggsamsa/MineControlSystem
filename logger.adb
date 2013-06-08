@@ -51,7 +51,7 @@ package body logger is
       Data : Unbounded_String := To_Unbounded_String(message);
       t    : String := "";
    begin
-      Open (File => F, Mode => Append_File, Name => "ch4_flow.log");
+      Open (File => F, Mode => Append_File, Name => "ch4_sensor.log");
       Unbounded_IO.Put_Line(F, Data);
       Close(F);
    end ch4_log;

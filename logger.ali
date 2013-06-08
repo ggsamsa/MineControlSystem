@@ -5,7 +5,7 @@ A -gnatA
 P SS ZX
 R nnnnnnnnnnnnnnnnnnvnnvnnnvnnnnnnnnvnnnnnnvnnvnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
 
-U logger%b		logger.adb		6c8886f7 NE OO PK IL
+U logger%b		logger.adb		cf6d6ced NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -36,7 +36,7 @@ D a-unccon.ads		20120510125800 f9eb8f06
 D interfac.ads		20120510125814 129923ea
 D i-cstrea.ads		20120510125814 1bd72c32
 D logger.ads		20130531002022 1152eb77
-D logger.adb		20130531002118 0fba279d
+D logger.adb		20130531173430 ac5fcd87
 D system.ads		20120510125846 6daf90c4
 D s-atocou.ads		20120510125818 4a9c6cb4
 D s-atocou.adb		20120510125818 c864ec10

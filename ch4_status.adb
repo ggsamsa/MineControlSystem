@@ -1,6 +1,6 @@
 package body ch4_status is
 
-   methane : methane_status;
+   methane : methane_status := ch4_safe;
 
    function read_ch4_status return methane_status is
    begin

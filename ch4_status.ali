@@ -5,17 +5,17 @@ A -gnatA
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
 
-U ch4_status%b		ch4_status.adb		e2acee6c NE OO PK IL
+U ch4_status%b		ch4_status.adb		23484bb1 NE OO PK IL
 
 U ch4_status%s		ch4_status.ads		b974b4d3 EE NE OO PK IL
 
 D ch4_status.ads	20130529203406 b974b4d3
-D ch4_status.adb	20130531170612 5bd85abf
+D ch4_status.adb	20130531172308 9a3cff62
 D system.ads		20120510125846 6daf90c4
 X 1 ch4_status.ads
 1K9*ch4_status 5l5 5e15 2|1b14 15l5 15t15
 2E9*methane_status 2e49 3r36 4r37 2|3r14 5r36 10r37
-2n28*ch4_safe{2E9}
+2n28*ch4_safe{2E9} 2|3r32
 2n38*ch4_unsafe{2E9}
 3V13*read_ch4_status{2E9} 2|5b13 8l8 8t23
 4U14*write_ch4_status 4>32 2|10b14 13l8 13t24

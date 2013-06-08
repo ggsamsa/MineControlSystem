@@ -23,8 +23,8 @@ package body mytime is
       Put(Hours, 3);
       Put(":");
       Put(Minutes, 2);
-      Put(":");
-      Put(Seconds, 2);
+--      Put(":");
+ --     Put(Seconds, 2);
 
    end output_time;
 end mytime;

@@ -28,7 +28,6 @@ package body mytime is
          Put(Minutes, 2);
          Put(":");
          Put(Seconds, 2);
-         tmp := Integer'Image(Hours);
       end sub;
 
    begin
