@@ -17,8 +17,6 @@ procedure main is
    value : Integer;
    t : Boolean;
 
-
-
    procedure setup is
       co_file, ch4_file, pump_file, wf_file, af_file : Ada.Text_IO.File_Type;
    begin
@@ -34,9 +32,7 @@ procedure main is
       Close(af_file);
    end setup;
 
-
    procedure read_file (which: String) is
-
       Filename   : String := which;
       File       : Ada.Text_IO.File_Type;
       Line_Count : Natural := 0;
@@ -61,20 +57,20 @@ begin
    Put_Line ("|MINE CONTROL SYSTEM SIMULATION V .1|");
    Put_Line ("|___________________________________|");
    loop
-      new_line;
+      New_Line;
       Put_Line ("-----------------------------------");
       Put_Line ("-- OPERATOR CONSOLE --");
       Put_Line ("turn (O)n the pump");
       Put_Line ("turn o(F)f the pump");
       Put_Line ("(R)equest pump status");
       Put_Line ("(C)heck for alarms");
-      Put_Line ("");
+      New_Line;
       Put_Line ("-- ENVIRONMENT MONITORING --");
       Put_Line ("        CO: " & Integer'Image(co_sensor.read_co));
       Put_Line ("       CH4: " & Integer'Image(ch4_sensor.read_ch4));
       Put_Line ("Water Flow: " & Boolean'Image(water_flow_sensor.read_water_flow));
       Put_Line ("  Air Flow: " & Boolean'Image(air_flow_sensor.read_air_flow));
-      Put_Line ("");
+      New_Line;
       Put_Line ("-- LOGGING --");
       Put_Line ("(1) Read CO sensor LOG");
       Put_Line ("(2) Read CH4 sensor LOG");
@@ -86,8 +82,7 @@ begin
       Put_Line ("(8) switch Air Flow");
       Put_Line ("(9) Set Water Level to HIGH");
       Put_Line ("(0) Set Water Level to LOW");
-      Put_Line ("(0) simulate");
-      Put_Line ("");
+      New_Line;
       Put_Line ("e(X)it");
       Put_Line ("-----------------------------------");
 

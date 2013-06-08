@@ -8,11 +8,6 @@ package body air_flow_sensor is
 
    afcsr : device.csr;
 
-   procedure initialise is
-   begin
-      null;
-   end initialise;
-
    procedure set_operation(to : device.device_operation) is
    begin
       afcsr.operation := to;

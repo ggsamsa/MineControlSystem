@@ -1,6 +1,5 @@
 with device;
 package air_flow_sensor is
-   procedure initialise;
 
    function read_air_flow return boolean;
 

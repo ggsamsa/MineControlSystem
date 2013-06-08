@@ -57,26 +57,26 @@ D s-traent.ads		20120510125838 5221ee41
 D s-unstyp.ads		20120510125838 6ae15c76
 D s-win32.ads		20120510125840 07238fa2
 D water_flow_sensor.ads	20130601185556 6e81ec98
-D water_flow_sensor.adb	20130601185704 60d39b51
+D water_flow_sensor.adb	20130608103244 60d39b51
 X 7 device.ads
 1K9*device 24e11 35|1w6 2r5 11r12
 6R9*csr 13e17 35|11r19
 X 8 hlw_handler.ads
-1K9*hlw_handler 12e16 35|4w6 6r5 22r13 22r44
-2n30*low{2E9} 35|22r56
-6V13*read_water_mark{2E9} 35|22s25
+1K9*hlw_handler 12e16 35|4w6 6r5 21r13 21r44
+2n30*low{2E9} 35|21r56
+6V13*read_water_mark{2E9} 35|21s25
 X 12 logger.ads
-1K9*logger 7e11 35|5w6 25r13 28r13
-5U14*water_flow_log 35|25s20 28s20
+1K9*logger 7e11 35|5w6 24r13 27r13
+5U14*water_flow_log 35|24s20 27s20
 X 13 pump_controller.ads
-1K9*pump_controller 12e20 35|3w6 7r5 23r16 23r49
-2n25*on{2E9} 35|23r65
-8V13*request_status{2E9} 35|23s32
+1K9*pump_controller 12e20 35|3w6 7r5 22r16 22r49
+2n25*on{2E9} 35|22r65
+8V13*request_status{2E9} 35|22s32
 X 34 water_flow_sensor.ads
-1K9*water_flow_sensor 7l5 7e22 35|9b14 35l5 35t22
+1K9*water_flow_sensor 7l5 7e22 35|9b14 34l5 34t22
 3V13*read_water_flow{boolean} 35|13b13 16l8 16t23
-5t9*thread 35|18b14 33l8 33t14
+5t9*thread 35|18b14 32l8 32t14
 X 35 water_flow_sensor.adb
-10b4 flow{boolean} 15r14 24m13 27m13
+10b4 flow{boolean} 15r14 23m13 26m13
 11r4 wfcsr{7|6R9}
 

@@ -5,10 +5,6 @@ with operator_console;
 --pragma Elaborate_All(operator_console);
 package body co_sensor is
    co_present : integer := 700;
-   procedure initialise is
-   begin
-      null;
-   end initialise;
 
    procedure set_co(to : integer) is
    begin
