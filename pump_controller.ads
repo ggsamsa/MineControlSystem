@@ -9,4 +9,8 @@ package pump_controller is
    procedure is_safe;
    procedure not_safe;
 
+   procedure switch_pump_by_oper;
+
+   function read_pump_switch return Boolean;
+
 end pump_controller;

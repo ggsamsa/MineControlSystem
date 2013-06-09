@@ -7,6 +7,7 @@ with ch4_sensor;
 with water_flow_sensor;
 with air_flow_sensor;
 with hlw_handler;
+with pump_controller;
 
 
 procedure main is
@@ -59,7 +60,13 @@ begin
       Put_Line ("-----------------------------------");
       Put_Line ("-- OPERATOR CONSOLE --");
       Put_Line ("turn (O)n the pump");
-      Put_Line ("turn o(F)f the pump");
+      Put("(s)witch pump: ");
+      if pump_controller.read_pump_switch = true then
+         put("LOCKED");
+      else
+         put("UNLOCKED");
+      end if;
+      New_Line;
       Put_Line ("(R)equest pump status");
       Put_Line ("(C)heck for alarms");
       New_Line;
@@ -89,7 +96,7 @@ begin
       case a is
          when 'r' => operator_console.request_pump_status;
          when 'o' => operator_console.turn_pump_on;
-         when 'f' => operator_console.turn_pump_off;
+         when 's' => operator_console.switch_pump;
             when 'c' => operator_console.check_alarms;
          when '1' => New_Line; Put_Line("CO LOG -----");
             read_file("co_sensor.log");
@@ -116,5 +123,6 @@ begin
          when 'x' => exit;
          when others => Put_Line("Undefined option");
       end case;
+      delay 0.8;
    end loop;
 end main;

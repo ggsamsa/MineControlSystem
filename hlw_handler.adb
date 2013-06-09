@@ -4,7 +4,7 @@ with operator_console;
 
 package body hlw_handler is
 
-   w : water_mark;
+   w : water_mark := low;
 
    function read_water_mark return water_mark is
    begin

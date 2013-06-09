@@ -8,7 +8,7 @@ package operator_console is
 
    procedure request_pump_status;
    procedure turn_pump_on;
-   procedure turn_pump_off;
+   procedure switch_pump;
    procedure alarm(reason : alarm_reason);
 
 end operator_console;

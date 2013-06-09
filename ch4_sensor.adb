@@ -6,7 +6,7 @@ with ch4_status;
 use pump_controller;
 
 package body ch4_sensor is
-   ch4_present : integer := 800;
+   ch4_present : integer := 200;
    CH4_HIGH : constant := 600;
 
    procedure set_ch4 (to : integer) is

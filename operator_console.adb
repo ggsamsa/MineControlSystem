@@ -23,10 +23,10 @@ package body operator_console is
          when pump_controller.PUMP_NOT_SAFE => Put_Line("/!\/!\ PUMP NOT SAFE /!\/!\");
    end turn_pump_on;
 
-   procedure turn_pump_off is
+   procedure switch_pump is
    begin
-      pump_controller.set_pump(pump_controller.off);
-   end turn_pump_off;
+      pump_controller.switch_pump_by_oper;
+   end switch_pump;
 
    procedure alarm (reason : alarm_reason) is
    begin
@@ -44,6 +44,8 @@ package body operator_console is
 
    procedure check_alarms is
    begin
+      clear_alarms;
+      delay 0.8;
       if alarm_1 = true then
          Put_Line ("/!\/!\ HIGH_CO /!\/!\");
       end if;
