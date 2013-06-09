@@ -1,7 +1,5 @@
 with operator_console;
 with logger;
-with device;
-use device;
 
 package body air_flow_sensor is
    air_flow : boolean;
@@ -26,7 +24,7 @@ package body air_flow_sensor is
          else
             logger.air_flow_log("AIR_FLOW");
          end if;
-         delay 20.0;
+         delay 0.8;
       end loop;
 
    end thread;

@@ -23,7 +23,7 @@ package body co_sensor is
             operator_console.alarm(operator_console.HIGH_CO);
             co_log("HIGH_CO");
          end if;
-         delay 35.0;
+         delay 0.8;
       end loop;
 
    end thread;

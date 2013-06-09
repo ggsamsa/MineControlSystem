@@ -31,7 +31,7 @@ package body ch4_sensor is
             ch4_status.write_ch4_status(ch4_status.ch4_safe);
             logger.ch4_log("METHANE_SAFE");
          end if;
-         delay 35.0;
+         delay 0.8;
       end loop;
 
    end thread;

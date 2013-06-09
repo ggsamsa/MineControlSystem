@@ -9,7 +9,6 @@ package body logger is
    procedure co_log(message : String) is
       F	: Ada.Text_IO.File_Type;
       Data : Unbounded_String := To_Unbounded_String(message);
-      t : String := "";
    begin
       Open (File => F, Mode => Append_File, Name => "co_sensor.log");
       Unbounded_IO.Put_Line(F, Data);
@@ -19,7 +18,6 @@ package body logger is
    procedure pump_log(message : String) is
       F    : Ada.Text_IO.File_Type;
       Data : Unbounded_String := To_Unbounded_String(message);
-      t    : String := "";
    begin
       Open (File => F, Mode => Append_File, Name => "pump.log");
       Unbounded_IO.Put_Line(F, Data);
@@ -29,7 +27,6 @@ package body logger is
    procedure water_flow_log(message : String) is
       F    : Ada.Text_IO.File_Type;
       Data : Unbounded_String := To_Unbounded_String(message);
-      t    : String := "";
    begin
       Open (File => F, Mode => Append_File, Name => "water_flow.log");
       Unbounded_IO.Put_Line(F, Data);
@@ -39,7 +36,6 @@ package body logger is
    procedure air_flow_log(message : String) is
       F    : Ada.Text_IO.File_Type;
       Data : Unbounded_String := To_Unbounded_String(message);
-      t    : String := "";
    begin
       Open (File => F, Mode => Append_File, Name => "air_flow.log");
       Unbounded_IO.Put_Line(F, Data);
@@ -49,7 +45,6 @@ package body logger is
    procedure ch4_log(message : String) is
       F    : Ada.Text_IO.File_Type;
       Data : Unbounded_String := To_Unbounded_String(message);
-      t    : String := "";
    begin
       Open (File => F, Mode => Append_File, Name => "ch4_sensor.log");
       Unbounded_IO.Put_Line(F, Data);

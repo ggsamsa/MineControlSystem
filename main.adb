@@ -7,8 +7,6 @@ with ch4_sensor;
 with water_flow_sensor;
 with air_flow_sensor;
 with hlw_handler;
-with mytime;
-with device;
 
 
 procedure main is
@@ -92,6 +90,7 @@ begin
          when 'r' => operator_console.request_pump_status;
          when 'o' => operator_console.turn_pump_on;
          when 'f' => operator_console.turn_pump_off;
+            when 'c' => operator_console.check_alarms;
          when '1' => New_Line; Put_Line("CO LOG -----");
             read_file("co_sensor.log");
          when '2' => New_Line; Put_Line("CH4 LOG -----");
